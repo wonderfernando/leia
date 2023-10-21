@@ -9,10 +9,12 @@ display: flex;
 align-items: center;
 width: 100%;
 background-color: ${({theme})=> theme.colors["base-title"]};
+
 height: 5rem;
 justify-content: space-between;
 padding-right: 2rem;
 padding-left: 2rem;
+position: fixed;
 h1 a{
     color: #fff;
     font-weight: 900;

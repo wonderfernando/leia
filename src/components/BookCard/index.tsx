@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom";
-import { BookCardContainer } from "./styles";
-
-export default function BookCard() {
+import { AuthorBook, BookCardContainer, Gender, TitleBook } from "./styles";
+import { IBook } from "../../pages/Inicio";
+import { UserCircle } from "phosphor-react";
+ interface IBookCard {
+        book: IBook
+    }
+export default function BookCard({book}: IBookCard) {
+   
     return (
         <BookCardContainer>
-            <Link to="/"><span>Pai Rico Pai pobre</span></Link>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente error.</p>
-            <Link to="/"><span>ler</span></Link>
+            <Link to="/"><img src={book.img} alt="" /></Link>
+            <div>
+                 <TitleBook><Link to="/">{`${book.title.slice(0,40)}`}</Link></TitleBook>
+                 <Gender>Drama, Romance, Comedia</Gender>
+                 <AuthorBook>{book.authors}</AuthorBook>
+            </div>
+           <footer>
+                <UserCircle size={22}/>  <Link to="/">fernando wonder</Link> 
+            </footer>
         </BookCardContainer>
     )
 }

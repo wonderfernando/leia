@@ -1,0 +1,43 @@
+[
+    {
+        "id":1,
+        "name":"Romance"
+    },
+    {
+        "id":2,
+        "name":"Drama"
+    },
+    {
+        "id":3,
+        "name":"Accao"
+    },
+    {
+        "id":4,
+        "name":"Ficcão"
+    },
+    {
+        "id":5,
+        "name":"Psicologia"
+    },
+    
+    {
+        "id":6,
+        "name":"Medicina"
+    },
+    
+    {
+        "id":7,
+        "name":"Astrologia"
+    },
+    
+    {
+        "id":8,
+        "name":"Ciencia"
+    },
+    
+    {
+        "id":9,
+        "name":"Thriller"
+    }
+    
+]

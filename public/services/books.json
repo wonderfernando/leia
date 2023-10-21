@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "title":"Homo Deus",
+        "user_id":1,
+        "authors": "Yuval Noah",
+        "img": "img1.jpg",
+        "path":""
+    },
+    {
+        "id": 2,
+        "title":"As aventuras de Mike, a origem de Robson",
+        "user_id":1,
+        "authors": "Gabriel Dearo & Manu Digilio",
+        "img": "img2.jpg",
+        "path": ""
+    },
+ 
+    {
+        "id": 4,
+        "title":"As esculturas sem cabeca",
+        "user_id":1,
+        "authors": "Junju Ito",
+        "img": "img5.jpg",
+        "path": ""
+    },
+    {
+        "id": 5,
+        "title":"O labirinto do fauno",
+        "user_id":3,
+        "authors": "Cornella Funke",
+        "img": "img6.jpg",
+        "path": ""
+    },
+    {
+        "id": 6,
+        "title":"Em busca de sentido",
+        "user_id":3,
+        "authors": "Viktor Frankl",
+        "img": "img7.jpg",
+        "path": ""
+    },
+    {
+        "id": 7,
+        "title":"Uma breve historia do tempo",
+        "user_id":3,
+        "authors": "Stephen Hawking",
+        "img": "img8.jpg",
+        "path": ""
+    },
+    {
+        "id": 8,
+        "title":"Pais e Filhos",
+        "user_id":1,
+        "authors": "Ivan Turgeniev",
+        "img": "img9.jpg",
+        "path": ""
+    },
+    {
+        "id": 9,
+        "title":"Psicoverso",
+        "user_id":1,
+        "authors": "Gabriel Dearo & Manu Digilio",
+        "img": "img11.jpg",
+        "path": ""
+    },
+    {
+        "id": 10,
+        "title":"Psicoverso",
+        "user_id":1,
+        "authors": "Gabriel Dearo & Manu Digilio",
+        "img": "3389953.jpg",
+        "path": ""
+    }
+]

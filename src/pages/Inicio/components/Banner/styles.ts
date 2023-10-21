@@ -9,6 +9,7 @@ export const BannerContainer = styled.div`
     background-position: center;
     background-size: cover;
     width: 100%;
+ 
     > div{
         max-width: 700px;
         width: 100%;

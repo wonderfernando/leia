@@ -1,17 +1,18 @@
+import { IBook } from "../../pages/Inicio";
 import BookCard from "../BookCard";
 import { BookListContainer } from "./styles";
 
-export default function BookList() {
+interface IBookList{
+    books: IBook[]
+}
+
+export default function BookList({books}: IBookList) {
     return (
         <BookListContainer>
-            <BookCard/>
-            <BookCard/>
-            <BookCard/>
-            <BookCard/> 
-            <BookCard/> 
-            <BookCard/>   
-            <BookCard/>
-            <BookCard/>
+            {books && books.map(book=>
+                <BookCard key={book.id+""} book={book}/>
+            )}
+ 
         </BookListContainer>
     )
 }
