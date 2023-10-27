@@ -3,7 +3,7 @@ import { IBook } from "../Inicio";
 import SearchInput from "../Inicio/components/SearchInput";
 import { Aside, BookContainer, Content, TopContainer } from "./styles";
 import {useState,useEffect} from "react";
-
+import {useSearchParams} from "react-router-dom"
 
  interface IGender{
         id: number,
@@ -12,7 +12,8 @@ import {useState,useEffect} from "react";
 
 export default function Books() {
     const[books, setBooks] = useState<IBook[]>([])
-
+    const[searchParams] =useSearchParams()
+    
     const[genders,setGender] = useState<IGender[]>([])
     useEffect(()=>{
         (async()=>{
@@ -25,15 +26,24 @@ export default function Books() {
         (async ()=>{
             try {
                 const response = await fetch("./services/books.json")
-                const data = await response.json()
+                const data = (await response.json()) as IBook[]
+                const search = searchParams.get("search")
+                console.log(data)
+                if(search){
+                    const dt = data.filter(dat=>dat.title.toLowerCase().includes(search.toLowerCase()))
+                    setBooks(dt)
+                }
+                else
                 setBooks(data)
+                console.log(data)
             } catch (error) {
                 new Error("Deu erro")
             }
            
         
         })()
-    },[])
+    },[searchParams])
+    
    
     return (
       <BookContainer>

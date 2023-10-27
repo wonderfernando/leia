@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import BookList from "../../components/BookList";
 import Banner from "./components/Banner";
 import { InicioContainer } from "./styles";
-import { useEffect,useState } from "react";
+ 
+import useFetch from "../../hooks/useFetch";
+import Loading from "../../components/Loading";
  
 export interface IBook{
         id: Number,
@@ -14,9 +16,10 @@ export interface IBook{
 }
 export default function Inicio() {
     
-    const[books, setBooks] = useState<IBook[]>([])
+  //  const[books, setBooks] = useState<IBook[]>([])
+    const {data:books, loading} = useFetch<IBook[]>("./services/books.json",{method:"GET"})
 
-    useEffect(()=>{
+    /*useEffect(()=>{
         (async ()=>{
             try {
                 const response = await fetch("./services/books.json")
@@ -28,15 +31,18 @@ export default function Inicio() {
            
         
         })()
-    },[]) 
+    },[]) */
     return (
        <InicioContainer>
-            <Banner/>
+            {loading ? <Loading/> :<>
+            <Banner />
             <section className="container">
                 <h2>MAIS RECENTES</h2>
                 <BookList books={books}/>
                 <Link to="/livros"><h2>VER MAIS</h2></Link>
             </section>
+            </>
+            }
        </InicioContainer>
     ) 
 }

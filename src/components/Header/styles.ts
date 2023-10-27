@@ -3,6 +3,12 @@ import styled from "styled-components";
 interface IMenu{
     $openMenuToggle: boolean
 }
+export const SearchForm = styled.form`
+display: flex;
+align-items: center;
+ 
+ width: 100%;
+`
 export const HeaderContainer = styled.header<IMenu>`
 z-index: 999;
 display: flex;

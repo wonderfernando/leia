@@ -12,6 +12,12 @@ export const BookCardContainer = styled.div`
     overflow-x: hidden;
     padding-bottom: 0.5rem;
     min-width: 150px;
+    transition: 300ms;
+    &:hover{
+         box-shadow: 5px 5px 50px 15px rgba(0, 0, 0, 0.4);
+        transform: scale(1.1);
+       
+    }
    
     span{
         font-weight: bold;

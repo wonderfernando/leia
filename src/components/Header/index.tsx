@@ -1,12 +1,20 @@
 import { MagnifyingGlass, TextAlignLeft, X } from "phosphor-react";
-import { ButtonAuth, ButtonSearch, CloseButton, HeaderContainer, MenuContainer } from "./styles";
-import{useState} from "react"
-import {NavLink} from "react-router-dom"
+import { ButtonAuth, ButtonSearch, CloseButton, HeaderContainer, MenuContainer,SearchForm} from "./styles";
+import{useState,useEffect} from "react"
+import {NavLink, useNavigate} from "react-router-dom"
 export default function Header() {
     const [openMenuToggle, setOpenMenuToggle] = useState(false)
+    const [search, setSearch] = useState("")
+    const navigate =  useNavigate()
+    useEffect(()=>{
+       setOpenMenuToggle(false)
+    },[navigate])
     function handleClickOpenMenu() {
         setOpenMenuToggle(!openMenuToggle)
-        console.log(openMenuToggle)
+    }
+    function handleSubmit(event: React.FormEvent) {
+        event.preventDefault()
+       navigate(`/livros?search=${search}`)
     }
     return (
         <HeaderContainer $openMenuToggle={openMenuToggle}>
@@ -19,7 +27,7 @@ export default function Header() {
                     <li><NavLink to="/">Inicio</NavLink></li>
                     <li><NavLink to="/">Publicar</NavLink></li>
                     <li><NavLink to="/">Categorias</NavLink></li>
-                    <li><div><input type="text" placeholder="procurar" /> <ButtonSearch><MagnifyingGlass color="#fff" size={20}/></ButtonSearch></div></li>
+                    <li><div><SearchForm onSubmit={handleSubmit}><input type="text" onChange={({target})=>setSearch(target.value)} placeholder="procurar" /> <ButtonSearch type="submit"><MagnifyingGlass color="#fff" size={20}/></ButtonSearch></SearchForm></div></li>
                     <li><NavLink to="/entrar"><ButtonAuth>Entrar</ButtonAuth></NavLink></li>
                     <CloseButton onClick={handleClickOpenMenu}><X size={34} weight="fill" color="#fff"/></CloseButton>
                 </ul>
