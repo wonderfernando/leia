@@ -2,7 +2,7 @@ import { X } from "phosphor-react";
 import { ImageViewContainer } from "./styles";
 
 interface IImageView{
-    src: string,
+    src?: string,
     isOpen:boolean,
     setIsOpenModal:()=>void
 }

@@ -17,7 +17,7 @@ export default function useFetch<T>(url: string, options?: RequestInit) {
                 if(error instanceof Error)
                     setError(error.message)
             }finally{
-                setLoading(true)
+                setLoading(false)
             }
         })()
     },[url])
