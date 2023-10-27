@@ -5,7 +5,7 @@ export const BookContainer = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: relative;
- 
+ min-height: 100vh;
 `
 
 export const Content = styled.div`
