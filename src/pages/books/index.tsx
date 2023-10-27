@@ -50,7 +50,7 @@ export default function Books() {
                     </ul>
                 </Aside>
                 <div>
-                    <BookList books={books}/>
+                    <BookList $isOnGender={true} books={books}/>
                 </div>
             </Content>
       </BookContainer>

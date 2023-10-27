@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const LayoutContainer = styled.div`
 display: flex;
 flex-direction: column;
+position: relative;
 main{
     margin-top: 5rem;
 }

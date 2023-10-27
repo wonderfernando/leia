@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BookCardContainer = styled.div`
    // padding: 2rem;
-    border-radius: 20px;
+    border-radius: 8px;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -19,6 +19,7 @@ export const BookCardContainer = styled.div`
     img{
         width: 290px;
         height: 240px;
+        object-fit: cover;
     }
     footer{
         display: flex;

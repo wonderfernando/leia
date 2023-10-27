@@ -8,11 +8,13 @@ export const SearchinputContainer = styled.div`
         height: 1rem;
         padding: 1rem;
         border-radius: 100px;
-        background-color: ${({theme})=>theme.colors["base-input"]};
-        flex: 1;
+         flex: 1;
+         color: #d1d1d1;
+        background-color: rgba(0,0,0,0.5);
     input{
         font-size: ${({theme})=>theme.textSizes["text-m"]}; ;
        width: 100%;
+       color: #d1d1d1;
        height: 1rem;
        border: none;
        outline: transparent;

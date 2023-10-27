@@ -35,7 +35,7 @@ export const GlobalStyles = createGlobalStyle`
         }
         100%{
             opacity: 100;
-            transform: translateX(0);
+            transform: initial
         }
     }
 

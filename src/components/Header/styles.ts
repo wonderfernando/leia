@@ -4,7 +4,7 @@ interface IMenu{
     $openMenuToggle: boolean
 }
 export const HeaderContainer = styled.header<IMenu>`
-
+z-index: 999;
 display: flex;
 align-items: center;
 width: 100%;
