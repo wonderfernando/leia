@@ -88,8 +88,9 @@ nav{
 export const ButtonSearch = styled.button`
 background: none;
 border: none;
-
 `
+
+
 export const CloseButton = styled(ButtonSearch)`
 position: absolute;
 right: 0;

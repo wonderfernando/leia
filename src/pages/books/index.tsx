@@ -5,7 +5,7 @@ import { Aside, BookContainer, Content, TopContainer } from "./styles";
 import {useState,useEffect} from "react";
 import {useSearchParams} from "react-router-dom"
 
- interface IGender{
+ export interface IGender{
         id: number,
         name: string
 }

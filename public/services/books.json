@@ -5,7 +5,10 @@
         "user_id":1,
         "authors": "Yuval Noah",
         "img": "img1.jpg",
-        "path":""
+        "path":"https://www.mediafire.com/file/g6wkjdymcktjoyq/Pai_Rico%252C_Pai_Pobre_-_Robert_T._Kiyosaki_%25282%2529.pdf/file",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     },
     {
         "id": 2,
@@ -13,7 +16,10 @@
         "user_id":1,
         "authors": "Gabriel Dearo & Manu Digilio",
         "img": "img2.jpg",
-        "path": ""
+        "path": "",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     },
  
     {
@@ -22,7 +28,10 @@
         "user_id":1,
         "authors": "Junju Ito",
         "img": "img5.jpg",
-        "path": ""
+        "path": "",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     },
     {
         "id": 5,
@@ -30,7 +39,10 @@
         "user_id":3,
         "authors": "Cornella Funke",
         "img": "img6.jpg",
-        "path": ""
+        "path": "",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     },
     {
         "id": 6,
@@ -38,7 +50,10 @@
         "user_id":3,
         "authors": "Viktor Frankl",
         "img": "img7.jpg",
-        "path": ""
+        "path": "",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     },
     {
         "id": 7,
@@ -46,7 +61,10 @@
         "user_id":3,
         "authors": "Stephen Hawking",
         "img": "img8.jpg",
-        "path": ""
+        "path": "",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     },
     {
         "id": 8,
@@ -54,7 +72,10 @@
         "user_id":1,
         "authors": "Ivan Turgeniev",
         "img": "img9.jpg",
-        "path": ""
+        "path": "",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     },
     {
         "id": 9,
@@ -62,7 +83,10 @@
         "user_id":1,
         "authors": "Gabriel Dearo & Manu Digilio",
         "img": "img11.jpg",
-        "path": ""
+        "path": "",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     },
     {
         "id": 10,
@@ -70,6 +94,9 @@
         "user_id":1,
         "authors": "Gabriel Dearo & Manu Digilio",
         "img": "3389953.jpg",
-        "path": ""
+        "path": "",
+        "language": "Portugues",
+        "gender_id": 1,
+        "gender": "Romance"
     }
 ]

@@ -8,6 +8,7 @@ export const ImageViewContainer = styled.div<IImageView>`
     height: 100vh;
     position: fixed;
     top: 0;
+    z-index: 99999999;
     left: 0;
     overflow: hidden;
     background-color: rgba(0,0,0,0.4);

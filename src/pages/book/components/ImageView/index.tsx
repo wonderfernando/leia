@@ -9,7 +9,7 @@ interface IImageView{
 export default function ImageView ({src,isOpen,setIsOpenModal}: IImageView) {
     return (
         <ImageViewContainer $isOpen={isOpen}>
-            <div className="animate">
+            <div className="animatescale">
                <button onClick={()=>setIsOpenModal()}><X size={28}color="#000"/></button>
                 <img src={`../${src}`} alt="" /> 
             </div>
