@@ -12,13 +12,20 @@ export interface IBook{
         user_id:Number,
         authors: string,
         img: string,
-        path: string
+        path: string,
+        gender_id: number
+        gender: string
 }
 export default function Inicio() {
     
   //  const[books, setBooks] = useState<IBook[]>([])
     const {data:books, loading} = useFetch<IBook[]>("./services/books.json",{method:"GET"})
-
+    let booksFilter = []
+   for (let index = 0; index < 8; index++) {
+        if(books)
+        booksFilter.push(books[index])
+    };
+    
     /*useEffect(()=>{
         (async ()=>{
             try {
@@ -38,7 +45,7 @@ export default function Inicio() {
             <Banner />
             <section className="container">
                 <h2>MAIS RECENTES</h2>
-                <BookList books={books}/>
+                <BookList books={booksFilter}/>
                 <Link to="/livros"><h2>VER MAIS</h2></Link>
             </section>
             </>

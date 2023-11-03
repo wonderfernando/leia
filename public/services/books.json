@@ -1,102 +1,137 @@
 [
     {
         "id": 1,
-        "title":"Homo Deus",
+        "title":"Pai rico pai pobre",
         "user_id":1,
-        "authors": "Yuval Noah",
-        "img": "img1.jpg",
+        "authors": "Robert T. Kiyosaki",
+        "img": "pairico.jpg",
         "path":"https://www.mediafire.com/file/g6wkjdymcktjoyq/Pai_Rico%252C_Pai_Pobre_-_Robert_T._Kiyosaki_%25282%2529.pdf/file",
         "language": "Portugues",
-        "gender_id": 1,
-        "gender": "Romance"
+        "gender_id": 10,
+        "gender": "Financeiro"
     },
     {
         "id": 2,
-        "title":"As aventuras de Mike, a origem de Robson",
-        "user_id":1,
-        "authors": "Gabriel Dearo & Manu Digilio",
-        "img": "img2.jpg",
-        "path": "",
+        "title":"A mágica de pensar grande",
+        "user_id":2,
+        "authors": "Carlos J. Schwartz",
+        "img": "magicapensargrande.jpg",
         "language": "Portugues",
-        "gender_id": 1,
-        "gender": "Romance"
+        "gender_id": 11,
+        "gender": "Auto Ajuda",
+        "path":"https://www.mediafire.com/file/funvjsxw738o2b5/A_Magica_de_Pensar_Grande_-_David_J._Schwartz.pdf/file"
+       
     },
  
-    {
-        "id": 4,
-        "title":"As esculturas sem cabeca",
-        "user_id":1,
-        "authors": "Junju Ito",
-        "img": "img5.jpg",
-        "path": "",
-        "language": "Portugues",
-        "gender_id": 1,
-        "gender": "Romance"
-    },
+
     {
         "id": 5,
-        "title":"O labirinto do fauno",
+        "title":"O poder do agora",
         "user_id":3,
-        "authors": "Cornella Funke",
-        "img": "img6.jpg",
-        "path": "",
+        "authors": "Eckhart Tolle",
+        "img": "poderagora.jpg",
+        "path": "https://www.mediafire.com/file/zi2g3ptyrr09184/O_Poder_Do_Agora_-_Eckhart_Tolle_%25282%2529.pdf/file",
         "language": "Portugues",
-        "gender_id": 1,
-        "gender": "Romance"
+        "gender_id": 11,
+        "gender": "Auto Ajuda"
     },
     {
         "id": 6,
-        "title":"Em busca de sentido",
-        "user_id":3,
-        "authors": "Viktor Frankl",
-        "img": "img7.jpg",
-        "path": "",
+        "title":"E se precisasse de você agora",
+        "user_id":1,
+        "authors": "Tatiane Biasi",
+        "img": "seeu.jpg",
+        "path": "https://www.mediafire.com/file/jldi7au9yssvtzs/Tatiane_Biasi_-_E_Se_Eu_Precisasse_De_Voce%25CC%2582.pdf/file",
         "language": "Portugues",
         "gender_id": 1,
         "gender": "Romance"
     },
     {
         "id": 7,
-        "title":"Uma breve historia do tempo",
+        "title":"Terror a bordo",
         "user_id":3,
-        "authors": "Stephen Hawking",
-        "img": "img8.jpg",
-        "path": "",
+        "authors": "Stephen King & Bev Vincent",
+        "img": "terrorbordo.jpg",
+        "path": "https://www.mediafire.com/file/wc1e18e4xz4cu44/Terror_a_Bordo_-_Va%25CC%2581rios_Autores.pdf/file",
         "language": "Portugues",
-        "gender_id": 1,
-        "gender": "Romance"
+        "gender_id": 9,
+        "gender": "Terror & Thriller"
     },
     {
         "id": 8,
-        "title":"Pais e Filhos",
+        "title":"Cosmos - 1980",
         "user_id":1,
-        "authors": "Ivan Turgeniev",
-        "img": "img9.jpg",
-        "path": "",
+        "authors": "Carl Sagan",
+        "img": "cosmoscarl.jpg",
+        "path": "https://www.mediafire.com/file/g7an2qprx40pr9b/1980_-_Cosmos_%2528PT_-_BR%2529_Completo_-_Carl_Sagan.pdf/file",
         "language": "Portugues",
-        "gender_id": 1,
-        "gender": "Romance"
+        "gender_id": 7,
+        "gender": "Cosmologia"
     },
     {
         "id": 9,
-        "title":"Psicoverso",
+        "title":"Assassinos da Lua das Flores: Petróleo, morte e a origem do FBI",
         "user_id":1,
-        "authors": "Gabriel Dearo & Manu Digilio",
-        "img": "img11.jpg",
-        "path": "",
+        "authors": "David Gran",
+        "img": "assassinoslua.jpg",
+        "path": "https://www.mediafire.com/file/j27zujsmvea3dff/Assassinos_da_Lua_das_Flores_-_David_Grann.pdf/file",
         "language": "Portugues",
-        "gender_id": 1,
-        "gender": "Romance"
+        "gender_id": 3,
+        "gender": "Accão"
     },
     {
         "id": 10,
-        "title":"Psicoverso",
+        "title":"Neurociencia e educacao",
         "user_id":1,
-        "authors": "Gabriel Dearo & Manu Digilio",
-        "img": "3389953.jpg",
-        "path": "",
+        "authors": "Ramon Cosenza e Leonor Guerra",
+        "img": "neuro.jpg",
+        "path": "https://www.mediafire.com/file/0840lxq9xh6p6vw/%255BCosenza_Guerra%255D_Neuroci_ncia_e_Educa__o%2528z-lib.org%2529.pdf/file",
         "language": "Portugues",
-        "gender_id": 1,
-        "gender": "Romance"
+        "gender_id": 8,
+        "gender": "Ciencia"
+    },
+    {
+        "id": 11,
+        "title":"Kit - Formulas matemáticas",
+        "user_id":2,
+        "authors": "Desconhecido",
+        "img": "kit.jpg",
+        "path": "https://www.mediafire.com/file/saj4umkapov2hra/Kit_-_Fo%25CC%2581rmulas_Matema%25CC%2581tica_.pdf/file",
+        "language": "Portugues",
+        "gender_id": 8,
+        "gender": "Ciencia"
+    },
+    {
+        "id": 12,
+        "title":"As provas da existencia de Deus",
+        "user_id":3,
+        "authors": "Jefferson Magno Costa",
+        "img": "provas.jpg",
+        "path": "https://www.mediafire.com/file/5w2ebbin24w3035/Jefferson_Magno_Costa_-_Provas_da_exist%25C3%25AAncia_de_Deus.pdf/file",
+        "language": "Portugues",
+        "gender_id": 12,
+        "gender": "Outro"
+    },
+    {
+        "id": 13,
+        "title":"Globalizacao, terrorismo e democracia",
+        "user_id":1,
+        "authors": "eric Hobsbawn",
+        "img": "terrorismo.jpg",
+        "path": "https://www.mediafire.com/file/1dhtwcux9lpipng/globaliza%25C3%25A7%25C3%25A3o_terrorismo_e_democracia.Pdf/file",
+        "language": "Portugues",
+        "gender_id": 12,
+        "gender": "outro"
+    },
+    {
+        "id": 4,
+        "title":"As armas da persuasão",
+        "user_id":1,
+        "authors": "Robert B. Cialdini",
+        "img": "armas.jpg",
+        "path": "https://www.mediafire.com/file/agt4wbv4e80iedr/As_Armas_da_Persuasao_-_Robert_B._Cialdini_%25282%2529.pdf/file",
+        "language": "Portugues",
+        "gender_id": 11,
+        "gender": "Auto Ajuda"
     }
 ]

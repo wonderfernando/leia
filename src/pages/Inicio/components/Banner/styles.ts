@@ -5,7 +5,7 @@ export const BannerContainer = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 60vh;
-    background-image: url("./123.jpeg");
+    background-image: url("../123.jpeg");
     background-position: center;
     background-size: cover;
     width: 100%;

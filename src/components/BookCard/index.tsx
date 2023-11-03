@@ -13,7 +13,7 @@ export default function BookCard({book}: IBookCard) {
             <Link to={`/livro/${book.id}`}><img src={`../${book.img}`} alt="" /></Link>
             <div>
                  <TitleBook><Link to={`/livro/${book.id}`}>{`${book.title.slice(0,40)}`}</Link></TitleBook>
-                 <Gender>Drama, Romance, Comedia</Gender>
+                 <Gender>{book.gender}</Gender>
                  <AuthorBook>{book.authors}</AuthorBook>
             </div>
            <footer>

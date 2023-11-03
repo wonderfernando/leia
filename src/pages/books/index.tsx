@@ -55,7 +55,7 @@ export default function Books() {
                     <h1>Categorias</h1>
                     <ul>
                         {genders && genders.map(gender=>(
-                            <li key={gender.id+""}><input type="checkbox" id={gender.id+""}/><label htmlFor={gender.id+""}>{gender.name}</label></li>    
+                            <li key={gender.id+""}>{gender.name}</li>    
                         )) }
                     </ul>
                 </Aside>

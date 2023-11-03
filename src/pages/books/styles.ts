@@ -55,7 +55,7 @@ export const Aside = styled.aside`
   li{
     padding: .2rem;
     display: flex;
-    gap: .5rem;
+    gap: .8rem;
     cursor: pointer;
   }
   @media(max-width: 720px){

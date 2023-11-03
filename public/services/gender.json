@@ -27,7 +27,7 @@
     
     {
         "id":7,
-        "name":"Astrologia"
+        "name":"Cosmologia"
     },
     
     {
@@ -37,7 +37,20 @@
     
     {
         "id":9,
-        "name":"Thriller"
+        "name":"Thriller, Terror"
+    },
+
+     {
+        "id":10,
+        "name":"Financeiro"
+    },
+    {
+        "id":11,
+        "name":"Auto Ajuda"
+    },
+    {
+        "id":12,
+        "name":"Outro"
     }
-    
+
 ]

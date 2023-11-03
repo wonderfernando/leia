@@ -21,6 +21,11 @@ export default function Book() {
     }
     const {id} = useParams()
     const {data: livros, loading, error} = useFetch<IBook[]>("../services/books.json", {method:"GET"})
+    const livrosFilter = []
+    if(livros)
+    for (let index = 0; index < 8; index++) {
+     livrosFilter.push(livros[index])
+    }
     console.log(loading)
     let book = null;
     if(livros)
@@ -40,8 +45,8 @@ export default function Book() {
                 <img alt="" src={`../${book?.img}`} onClick={handleImgClick}/>
                 <div>
                     <h1>{book && book.title}</h1>
-                    <span>Genero: Romance, Drama</span>
-                    <span>Autores:{book?.authors}</span>
+                    <span>Genero: {book?.gender}</span>
+                    <span>Autores: {book?.authors}</span>
                     <span><Star weight="fill" color="#FF8A00" size={22}/> 100</span>
                     <p>
                         <a href={book?.path}><ButtonOragen>Baixar agora</ButtonOragen></a>
@@ -50,7 +55,7 @@ export default function Book() {
             </Content>
             <RelatedContent className="animate">
                 <h2>Resultados relacionados</h2>
-                <BookList books={livros}/>
+                <BookList books={livrosFilter}/>
             </RelatedContent>
             <ImageView src={book?.img} isOpen={isOpen} setIsOpenModal={toogleModal}/>
       </BookContainer>
