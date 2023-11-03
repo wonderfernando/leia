@@ -34,21 +34,33 @@ ul{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 0.1rem;
+    
+        gap: 1rem;
         input{
+           
+            margin-right: .2rem;
             padding-left: .5rem;
             border: none;
             outline: transparent;
             height: 1.8rem;
             border-radius: 20px;
-            background-color: ${({theme})=>theme.colors["base-text"]};
+            background-color: rgba(0,0,0,0.3);
+            transition: 300ms;
             &:placeholder{
                 color: ${({theme})=>theme.colors["base-input"]}; ;
+            }
+            color:white;
+            &:focus{
+                background-color: rgba(0,0,0,0.8);
             }
         }
     }
     a{
         color: #fff;
+        transition: 300ms;
+         &:hover{
+                color: ${({theme})=>theme.colors["base-placeholder"]};;
+            }
     }
 }
 nav{
@@ -126,4 +138,8 @@ color: #fff;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: 300ms;
+&:hover{
+   background: ${({theme})=>theme.colors["brand-orange-dark"]}; 
+}
 `
